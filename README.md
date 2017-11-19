@@ -12,4 +12,5 @@ El archivo ArmonicosDesenalCuadrada.m es usado para realizar la representacion d
 Documentacion:
 Sobre nuestra Web http://uavlabs.org/ hemos publicado un articulo que hace referencia a estos dos codigos. 
 aqui 
+http://uavlabs.org/2017/11/19/representacion-de-n-armonicos-de-la-serie-de-furrier-para-una-senal-cuadrada/
 
