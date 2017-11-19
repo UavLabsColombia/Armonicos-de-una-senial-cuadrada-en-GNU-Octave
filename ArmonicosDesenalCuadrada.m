@@ -31,10 +31,11 @@ f2 = zeros(1,length(t)); % Inicializacion de la funcion
 f3 = zeros(1,length(t)); % Inicializacion de la funcion
 
 
-
+  
 for n = 1:2:N % Loop para calcular la sumatoria 
     
-    bn = (4)/(pi*n); % Este es el coeficiente de la serie de fourier.
+    %bn = (4)/(pi*n);  Este es el coeficiente de la serie de fourier calculado a mano.
+    bn = ((-2*(-1)^n) + cos(2*pi*n) + 1)/(pi*n);
     f = f+ bn*Vp*sin(W1*n*t); % Agrega los N terminos a la funcion fundamental 
     f2 = f2+ bn*Vp*sin(W1*n*t); % Agrega los N terminos a la funcion fundamental
     
