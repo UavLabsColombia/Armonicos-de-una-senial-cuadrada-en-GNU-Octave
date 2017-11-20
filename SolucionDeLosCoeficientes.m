@@ -1,13 +1,24 @@
-% El siguiente codigo, realiza una solucion basada en variables simbolicas para expresar 
+% El siguiente script, realiza una solucion basada en variables simbolicas para expresar 
 % La solucion de los coeficientes de la serie de fourier
 % Realiza un calculo muy aproximado a los coeficientes calculados manualmente. 
-close all
-clear all
-clc
-pkg load symbolic  %cargamos el modulo para las variables simbolicas
-syms x n  % variables simbolicas creadas 
-f=[1 -1]; % Definicion de la Funcion 
-L=[0 5 10];%% Definicion de los intervalos para la funcion. 
+close all;
+clear all;
+clc;
+pkg load symbolic;  %cargamos el modulo para las variables simbolicas
+syms x n;  % variables simbolicas creadas 
+disp("\n")
+disp("\n")
+disp ("--------------------------------------------------------------------------------------")
+disp("El siguiente script, realiza una solucion basada en variables simbolicas para expresar\n")
+disp("La solucion de los coeficientes de la serie de fourier\n")
+disp("Realiza un calculo muy aproximado a los coeficientes calculados manualmente.\n")
+disp("\n")
+disp("Definiendo la funcion:");
+disp("Es necesario definir los dos intervalos de la funcion");
+f=[input("Ingrese la funcion del primer intervalo\n") input("Ingrese la funcion del segundo intervalo\n")]; % Definicion de la Funcion 
+disp("Definiendo los intervalos de la funcion:");
+disp("Se deben definir los dos limites de la funcion");
+L=[input("ingrese el inicio de la funcion\n") input("ingrese el punto medio de la funcion\n") input("ingrese el punto final de la funcion\n")];%% Definicion de los intervalos para la funcion. 
 f=sym(f); % Crea una funciona simbolica basandose en los datos de la definicion de la funcion. 
 P=max(L)-min(L); % periodo para la funcion
 wo=2*pi/(P); % Frecuencia angular para la funcion
