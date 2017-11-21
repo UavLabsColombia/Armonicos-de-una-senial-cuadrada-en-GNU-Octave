@@ -7,7 +7,6 @@
 close all
 clear all
 clc
-%N = input("Ingrese el numero de armonicos a generar..") % Change this variable to change the number of terms in the fourier series
 disp ("--------------------------------------------------------------------------------------")
 disp ("Serie de Fourier (Armonicos)...\nInformacion:\nEsta serie ha sido calculada para generar una señal de la forma cuadrada\nLa señal comienza en tiempo = 0seg y terminara en un tiempo que depende del numero de ciclos, tendra una amplitud definida en la entrada\nTambien tendremos una frecuancia angular que depende de la entrada\nel numero de la variable Armonicos, realizara la sumatoria de los terminos de fourier")
 disp ("--------------------------------------------------------------------------------------")
